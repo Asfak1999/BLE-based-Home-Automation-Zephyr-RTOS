@@ -1,8 +1,3 @@
-.. zephyr:code-sample:: ble_peripheral_ht
-   :name: Health Thermometer (Peripheral)
-   :relevant-api: bt_bas bluetooth
-
-   Expose a Health Thermometer (HT) GATT Service generating dummy temperature values.
 
 Overview
 ********

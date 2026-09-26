@@ -1,0 +1,58 @@
+cmake:
+  application:
+    configuration-dir: 'G:/Zephyr_Projects/apps/Zephyr_ble/ble_custom_device/central_dev'
+    source-dir: 'G:/Zephyr_Projects/apps/Zephyr_ble/ble_custom_device/central_dev'
+  board:
+    name: 'esp32_devkitc'
+    path:
+     - 'G:/Zephyr_Projects/zephyr/boards/espressif/esp32_devkitc'
+    qualifiers: 'esp32/procpu'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'G:/Zephyr_Projects/zephyr/dts/bindings'
+    files:
+     - 'G:/Zephyr_Projects/zephyr/boards/espressif/esp32_devkitc/esp32_devkitc_procpu.dts'
+    include-dirs:
+     - 'G:/Zephyr_Projects/modules/hal/ambiq/dts'
+     - 'G:/Zephyr_Projects/modules/hal/atmel/include'
+     - 'G:/Zephyr_Projects/modules/hal/bouffalolab/include'
+     - 'G:/Zephyr_Projects/modules/hal/bouffalolab/include/zephyr'
+     - 'G:/Zephyr_Projects/modules/hal/gigadevice/include'
+     - 'G:/Zephyr_Projects/modules/hal/microchip/include'
+     - 'G:/Zephyr_Projects/modules/hal/microchip/dts'
+     - 'G:/Zephyr_Projects/modules/hal/nuvoton/dts'
+     - 'G:/Zephyr_Projects/modules/hal/nxp/dts'
+     - 'G:/Zephyr_Projects/modules/hal/stm32/dts'
+     - 'G:/Zephyr_Projects/modules/hal/ti/dts'
+     - 'G:/Zephyr_Projects/zephyr/include'
+     - 'G:/Zephyr_Projects/zephyr/include/zephyr'
+     - 'G:/Zephyr_Projects/zephyr/dts/common'
+     - 'G:/Zephyr_Projects/zephyr/dts/vendor'
+     - 'G:/Zephyr_Projects/zephyr/dts/rx'
+     - 'G:/Zephyr_Projects/zephyr/dts/x86'
+     - 'G:/Zephyr_Projects/zephyr/dts/xtensa'
+     - 'G:/Zephyr_Projects/zephyr/dts/sparc'
+     - 'G:/Zephyr_Projects/zephyr/dts/riscv'
+     - 'G:/Zephyr_Projects/zephyr/dts/posix'
+     - 'G:/Zephyr_Projects/zephyr/dts/arm64'
+     - 'G:/Zephyr_Projects/zephyr/dts/arm'
+     - 'G:/Zephyr_Projects/zephyr/dts/arc'
+     - 'G:/Zephyr_Projects/zephyr/dts'
+  kconfig:
+    files:
+     - 'G:/Zephyr_Projects/zephyr/boards/espressif/esp32_devkitc/esp32_devkitc_procpu_defconfig'
+     - 'G:/Zephyr_Projects/apps/Zephyr_ble/ble_custom_device/central_dev/prj.conf'
+    user-files:
+     - 'G:/Zephyr_Projects/apps/Zephyr_ble/ble_custom_device/central_dev/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: 'C:/Users/User/zephyr-sdk-0.17.4'
+  zephyr:
+    version: '4.3.99'
+    zephyr-base: 'G:/Zephyr_Projects/zephyr'
+version: '0.1.0'
+west:
+  command: 'G:\.venv\Scripts\west build -b esp32_devkitc/esp32/procpu'
+  topdir: 'G:\Zephyr_Projects'
+  version: '1.5.0'
