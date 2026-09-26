@@ -1,0 +1,28 @@
+/ {
+    aliases {
+        led0 = &myled0;
+        led1 = &myled1;
+        myuart2 = &uart2;
+    };
+
+
+    leds {
+        compatible = "gpio-leds";
+        
+        myled0: led_0 {
+            gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;
+        };
+
+        myled1: led_1 {
+            gpios = <&gpio0 25 GPIO_ACTIVE_LOW>;
+        };
+    };
+};
+
+
+&uart2 {
+    status = "okay";
+    current-speed = <115200>;
+    pinctrl-0 = <&uart2_default>;
+    pinctrl-names = "default";
+};
